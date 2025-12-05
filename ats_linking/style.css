@@ -1,0 +1,855 @@
+/* =========================================
+   共通ベーススタイル（全スライド共通）
+   ========================================= */
+
+/* ヘッダー共通 */
+.header {
+    padding: 1.5rem 4rem 1rem; /* 上下左右の余白統一 */
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1.25rem;        /* ヘッダー文字サイズ統一 */
+    font-weight: 700;
+}
+
+/* ボディ共通 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+.accent-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #2563eb; /* Blue-600 */
+}
+.slide-container {
+    width: 1280px;
+    min-height: 720px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    padding: 2rem 4rem;  /* 横の余白をここで統一 */
+    gap: 4rem;
+    align-items: stretch;
+}
+.card {
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+.icon-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+.critical-card {
+    background-color: #fff7ed; /* Light Orange */
+    border: 1px solid #fed7aa;
+}
+.critical-icon {
+    background-color: #ffedd5;
+    color: #ea580c;
+}
+.process-card {
+    background-color: #eff6ff; /* Light Blue */
+    border: 1px solid #bfdbfe;
+}
+.process-icon {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+.alert-box {
+    background-color: white;
+    border-left: 4px solid #ea580c;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+}
+.flow-box {
+    background-color: white;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 1rem;
+}
+.checklist-container {
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.checklist-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease;
+}
+.check-icon-box {
+    min-width: 48px;
+    height: 48px;
+    background-color: #eff6ff;
+    color: #2563eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-right: 1.25rem;
+    flex-shrink: 0;
+}
+.info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.contact-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+.contact-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #bfdbfe;
+}
+.step-num {
+    background-color: #94a3b8;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-right: 0.75rem;
+}
+
+/* フッター共通 */
+.footer {
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9ca3af;
+    font-size: 0.875rem;
+    border-top: 1px solid #f3f4f6;
+}
+
+/* =========================================
+   スライド1専用スタイル
+   ========================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+.decorative-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.05;
+    z-index: 0;
+}
+.circle-1 {
+    width: 400px;
+    height: 400px;
+    background-color: #2563eb;
+    top: -100px;
+    right: -100px;
+}
+.circle-2 {
+    width: 200px;
+    height: 200px;
+    background-color: #1d4ed8;
+    bottom: 50px;
+    left: 50px;
+}
+
+/* =========================================
+   スライド2専用スタイル
+   ========================================= */
+.agenda-number {
+    font-weight: 900;
+    color: #e5e7eb;
+    position: absolute;
+    left: -10px;
+    top: -15px;
+    font-size: 3.5rem;
+    z-index: 0;
+}
+.agenda-item {
+    position: relative;
+    padding-left: 3.5rem;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* =========================================
+   スライド3専用スタイル
+   ========================================= */
+.card {
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+}
+
+.risk-card {
+    background-color: #fff1f2;
+    border: 1px solid #fecdd3;
+}
+
+/* =========================================
+   スライド4専用スタイル
+   ========================================= */
+.card {
+    flex: 1;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* =========================================
+   スライド5専用スタイル
+   ========================================= */
+
+/* =========================================
+   スライド6専用スタイル
+   ========================================= */
+.time-badge {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+}
+.flow-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem 0;
+}
+.flow-line {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    right: 50px;
+    height: 3px;
+    background-color: #e5e7eb;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+.flow-step {
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.flow-step.active {
+    border-color: #2563eb;
+    background-color: #eff6ff;
+}
+.step-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f3f4f6;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+.active .step-icon {
+    background-color: #2563eb;
+    color: white;
+}
+.info-card {
+    background-color: #f8fafc;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    border: 1px solid #e2e8f0;
+    height: 100%;
+}
+.warning-card {
+    background-color: #fef2f2;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    border: 1px solid #fee2e2;
+    height: 100%;
+}
+.custom-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.custom-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+}
+.warning-list li::before {
+    color: #ef4444;
+}
+
+/* =========================================
+   スライド7専用スタイル
+   ========================================= */
+.checklist-container {
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.checklist-item {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease;
+}
+.check-icon-box {
+    min-width: 48px;
+    height: 48px;
+    background-color: #eff6ff;
+    color: #2563eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-right: 1.25rem;
+    flex-shrink: 0;
+}
+.info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.contact-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+.contact-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #bfdbfe;
+}
+.chat-badge {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-left: auto;
+}
+.flow-step {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 0.5rem;
+}
+.step-num {
+    background-color: #94a3b8;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-right: 0.75rem;
+}
+
+/* =========================================
+   スライド8専用スタイル
+   ========================================= */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    height: 100%;
+}
+.info-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    border-color: #bfdbfe;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+.icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-right: 0.75rem;
+}
+.card-title {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #1f2937;
+}
+.example-box {
+    margin-top: auto;
+    background-color: #f8fafc;
+    border-radius: 6px;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    border-left: 3px solid #cbd5e1;
+}
+
+/* =========================================
+   スライド9専用スタイル
+   ========================================= */
+
+/* =========================================
+    スライド10専用スタイル
+   ========================================= */
+.card {
+    flex: 1;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+.period-card {
+    background-color: #eff6ff; /* Indigo/Blue tint */
+    border: 1px solid #c7d2fe;
+}
+.check-card {
+    background-color: #f0fdf4; /* Emerald/Green tint */
+    border: 1px solid #bbf7d0;
+}
+.period-icon {
+    background-color: #e0e7ff;
+    color: #4338ca;
+}
+.check-icon {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+.highlight-box {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-top: 1rem;
+}
+.calendar-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+    position: relative;
+}
+.calendar-page {
+    width: 80px;
+    height: 90px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+}
+.calendar-header {
+    background: #4338ca;
+    height: 24px;
+    width: 100%;
+}
+.calendar-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #333;
+}
+.arrow-connector {
+    height: 4px;
+    background: #e5e7eb;
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+}
+.arrow-connector::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -3px;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #e5e7eb;
+}
+
+/* =========================================
+    スライド11専用スタイル
+   ========================================= */
+.cw-screen-mockup {
+    background-color: #f5f5f4;
+    border: 1px solid #d6d3d1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cw-header {
+    background-color: #2e3842;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 0.9rem;
+}
+.cw-body {
+    background-color: white;
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: hidden;
+}
+.cw-message {
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px;
+    border-left: 4px solid transparent;
+}
+.cw-message.alert {
+    background-color: #fff1f2;
+    border-left-color: #ef4444;
+}
+.tips-box {
+    background-color: #fffbeb;
+    border: 1px solid #fcd34d;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.action-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.2s;
+}
+.action-card:hover {
+    transform: translateX(5px);
+    border-color: #93c5fd;
+}
+.notification-sample {
+    background-color: #1f2937;
+    color: #d1d5db;
+    font-family: monospace;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-left: 3px solid #ef4444;
+    width: 100%;
+}
+.action-arrow {
+    color: #9ca3af;
+    margin: 0 1rem;
+    padding-top: 1.5rem;
+}
+.response-box {
+    flex: 1;
+}
+.escalation-box {
+    background-color: #eff6ff;
+    border: 2px dashed #3b82f6;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* =========================================
+    スライド12専用スタイル
+   ========================================= */
+.flow-column {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+}
+.flow-step {
+    position: relative;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.flow-step:last-child {
+    margin-bottom: 0;
+}
+.step-badge {
+    background-color: #3b82f6;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+.step-line {
+    position: absolute;
+    left: 36px; /* padding 1.25rem (20px) + 16px (half of badge) */
+    top: 100%;
+    height: 1.5rem;
+    width: 2px;
+    background-color: #cbd5e1;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+.flow-step:last-child .step-line {
+    display: none;
+}
+.checklist-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.checklist-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    border-top: 4px solid #94a3b8;
+}
+.checklist-card.primary {
+    border-top-color: #2563eb;
+}
+.checklist-card.warning {
+    border-top-color: #f59e0b;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+.check-list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+.check-list-item:last-child {
+    margin-bottom: 0;
+}
+.check-box {
+    color: #2563eb;
+    margin-right: 0.75rem;
+    margin-top: 0.2rem;
+}
+.important-message {
+    margin-top: auto;
+    background-color: #eff6ff;
+    border: 1px dashed #3b82f6;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* =========================================
+    スライド13専用スタイル
+   ========================================= */
+.points-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.point-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    margin-bottom: 0.875rem; /* Adjusted margin */
+    transition: all 0.2s ease;
+    border-left: 6px solid transparent;
+}
+.point-item:last-child {
+    margin-bottom: 0;
+}
+.point-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.point-number {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #e2e8f0;
+    margin-right: 1.5rem;
+    line-height: 1;
+    min-width: 40px;
+    text-align: center;
+}
+.point-item.active .point-number {
+    color: #2563eb;
+}
+.point-item.active {
+    border-left-color: #2563eb;
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+}
+.contact-container {
+    flex: 1;
+    background-color: #1e293b;
+    border-radius: 16px;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.contact-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #334155;
+    display: flex;
+    align-items: center;
+}
+.contact-box {
+    background-color: #334155;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.contact-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.contact-value {
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.5;
+}
+.final-message {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    padding-top: 1rem;
+    border-top: 1px solid #334155;
+}

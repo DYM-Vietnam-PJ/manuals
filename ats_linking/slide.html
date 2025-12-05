@@ -1,0 +1,3044 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ATS転記システム運用マニュアル</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .accent-bar {
+            width: 100%;
+            height: 12px;
+            background-color: #2563eb; /* Blue-600 */
+        }
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 6rem;
+            position: relative;
+            z-index: 10;
+        }
+        .decorative-circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.05;
+            z-index: 0;
+        }
+        .circle-1 {
+            width: 400px;
+            height: 400px;
+            background-color: #2563eb;
+            top: -100px;
+            right: -100px;
+        }
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            background-color: #1d4ed8;
+            bottom: 50px;
+            left: 50px;
+        }
+        .title-underline {
+            width: 120px;
+            height: 6px;
+            background-color: #2563eb;
+            margin-bottom: 2rem;
+        }
+        .meta-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+        .meta-icon {
+            width: 24px;
+            text-align: center;
+            margin-right: 12px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Decorative Elements -->
+<div class="accent-bar"></div>
+<div class="decorative-circle circle-1"></div>
+<div class="decorative-circle circle-2"></div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<div class="mb-4">
+<p class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-2">Internal Training Material</p>
+<h2 class="text-3xl text-gray-600 font-light mb-2">社員教育用資料</h2>
+</div>
+<h1 class="text-6xl font-black text-gray-900 leading-tight mb-6">
+                ATS転記システム<br/>
+                運用マニュアル
+            </h1>
+<div class="title-underline"></div>
+<p class="text-xl text-gray-600 mb-12 max-w-3xl leading-relaxed">
+                安定稼働とリスク最小化のための共通ルール共有。<br/>
+                運用・CS・開発間の連携強化を目指して。
+            </p>
+<!-- Meta Info Grid -->
+<div class="grid grid-cols-2 gap-8 mt-auto border-t border-gray-200 pt-8">
+<div>
+<p class="text-sm text-gray-500 uppercase tracking-wider mb-2">対象部署</p>
+<div class="meta-info-item">
+<span class="meta-icon"><i class="fas fa-users"></i></span>
+<p class="font-medium">CS事業部 ・ 運用部 ・ 開発部</p>
+</div>
+</div>
+<div>
+<p class="text-sm text-gray-500 uppercase tracking-wider mb-2">ドキュメント情報</p>
+<div class="meta-info-item">
+<span class="meta-icon"><i class="fas fa-code-branch"></i></span>
+<p>Version 1.0</p>
+</div>
+<div class="meta-info-item">
+<span class="meta-icon"><i class="far fa-calendar-alt"></i></span>
+<p>2025年12月04日 作成</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-end pr-24 pb-8">
+<a href="slide2.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer with Logo Placeholder or Company Name -->
+<div class="px-8 py-4 flex justify-between items-center text-gray-400 text-sm">
+<p>Confidential</p>
+<p>ATS Transcription System Manual</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>目次 - ATS転記システム運用マニュアル</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .accent-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #2563eb; /* Blue-600 */
+        }
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 5rem;
+            position: relative;
+            z-index: 10;
+        }
+        .agenda-number {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 900;
+            color: #e5e7eb; /* Gray-200 */
+            line-height: 1;
+            position: absolute;
+            left: -10px;
+            top: -15px;
+            font-size: 3.5rem;
+            z-index: 0;
+        }
+        .agenda-item {
+            position: relative;
+            padding-left: 3.5rem;
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .agenda-text {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #374151; /* Gray-700 */
+            position: relative;
+            z-index: 1;
+            border-bottom: 1px solid #f3f4f6;
+            width: 100%;
+            padding-bottom: 0.5rem;
+        }
+        .decorative-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.03;
+            background-color: #2563eb;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Decorative Background -->
+<div class="decorative-shape" style="width: 600px; height: 600px; right: -200px; top: -200px;"></div>
+<div class="decorative-shape" style="width: 300px; height: 300px; left: -50px; bottom: -50px;"></div>
+<div class="content-wrapper">
+<!-- Header -->
+<div class="flex items-baseline border-b-2 border-gray-100 pb-6 mb-10">
+<h1 class="text-5xl font-black text-gray-800 tracking-tight mr-6">Agenda</h1>
+<p class="text-xl text-gray-500 font-medium">本日のアジェンダ</p>
+</div>
+<!-- Grid Content -->
+<div class="grid grid-cols-2 gap-x-20 gap-y-6 flex-1">
+<!-- Left Column -->
+<div class="flex flex-col justify-between space-y-6">
+<div class="relative h-12">
+<span class="agenda-number">01</span>
+<div class="agenda-item">
+<p class="agenda-text">重要性と前提</p>
+</div>
+</div>
+<div class="relative h-12">
+<span class="agenda-number">02</span>
+<div class="agenda-item">
+<p class="agenda-text">転記不可の原因</p>
+</div>
+</div>
+<div class="relative h-12">
+<span class="agenda-number">03</span>
+<div class="agenda-item">
+<p class="agenda-text">重要な連携事項</p>
+</div>
+</div>
+<div class="relative h-12">
+<span class="agenda-number">04</span>
+<div class="agenda-item">
+<p class="agenda-text">開発スケジュールとルール</p>
+</div>
+</div>
+<div class="relative h-12">
+<span class="agenda-number">05</span>
+<div class="agenda-item">
+<p class="agenda-text">依頼方法の重要ポイント</p>
+</div>
+</div>
+<div class="relative h-12">
+<span class="agenda-number">06</span>
+<div class="agenda-item">
+<p class="agenda-text">依頼時に必要な情報</p>
+</div>
+</div>
+</div>
+<!-- Right Column -->
+<div class="flex flex-col justify-start space-y-6">
+<div class="relative h-12">
+<span class="agenda-number">07</span>
+<div class="agenda-item">
+<p class="agenda-text">転記スタート前のチェック</p>
+</div>
+</div>
+<div class="relative h-12">
+<span class="agenda-number">08</span>
+<div class="agenda-item">
+<p class="agenda-text">転記スタート後の運用（1週間監視）</p>
+</div>
+</div>
+<div class="relative h-12">
+<span class="agenda-number">09</span>
+<div class="agenda-item">
+<p class="agenda-text">Chatwork通知の活用</p>
+</div>
+</div>
+<div class="relative h-12">
+<span class="agenda-number">10</span>
+<div class="agenda-item">
+<p class="agenda-text">引継ぎ時の注意事項</p>
+</div>
+</div>
+<div class="relative h-12">
+<span class="agenda-number">11</span>
+<div class="agenda-item">
+<p class="agenda-text text-blue-600 font-bold">まとめ・最重要5ポイント＋連絡先</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-8 py-8">
+<a href="slide1.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide3.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="mt-auto pt-8 flex justify-between items-center text-gray-400 text-xs border-t border-gray-100">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 2</p>
+</div>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>転記システムの重要性と前提</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 2rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    .card {
+        flex: 1;
+        border-radius: 1rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+    .risk-card {
+        background-color: #fff1f2; /* Light Red */
+        border: 1px solid #fecdd3;
+    }
+    .system-card {
+        background-color: #eff6ff; /* Light Blue */
+        border: 1px solid #bfdbfe;
+    }
+    .icon-circle {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    .risk-icon {
+        background-color: #fee2e2;
+        color: #ef4444;
+    }
+    .system-icon {
+        background-color: #dbeafe;
+        color: #2563eb;
+    }
+    .cost-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        color: #b91c1c;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        margin-top: 1rem;
+    }
+    .check-flow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+    .flow-arrow {
+        margin: 0 1rem;
+        color: #9ca3af;
+        font-size: 1.25rem;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-2">
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-bold tracking-wider mr-3">IMPORTANT</span>
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 01</p>
+</div>
+<h1 class="text-4xl font-black text-gray-800">転記システムの重要性と前提</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left Column: Risk & Impact -->
+<div class="card risk-card relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-red-100 rounded-full opacity-50 blur-xl"></div>
+<div class="icon-circle risk-icon">
+<i class="fas fa-exclamation-triangle"></i>
+</div>
+<h2 class="text-2xl font-bold text-red-800 mb-4">転記エラーのリスクと影響</h2>
+<p class="text-gray-700 mb-6 leading-relaxed">
+                転記システムはお客様に大きく貢献できる反面、稼働不全は重大なトラブルに直結します。<br/>
+                単なる「エラー」ではなく、お客様の信用問題に関わります。
+            </p>
+<div class="bg-white/60 p-4 rounded-lg mb-4 border border-red-100">
+<h3 class="text-red-700 font-bold text-sm mb-2 flex items-center">
+<i class="fas fa-coins mr-2"></i> 一般的なATS導入コスト
+                </h3>
+<div class="flex space-x-4">
+<div class="cost-badge">
+<span class="text-xs text-gray-500 mr-2">初期費用</span>
+                        100万円〜
+                    </div>
+<div class="cost-badge">
+<span class="text-xs text-gray-500 mr-2">月額費用</span>
+                        20万円〜
+                    </div>
+</div>
+</div>
+<div class="mt-auto">
+<p class="text-sm font-bold text-red-700 mb-2">エラー発生時の具体的影響:</p>
+<ul class="space-y-2 text-sm text-gray-700">
+<li class="flex items-start">
+<i class="fas fa-times-circle text-red-400 mt-1 mr-2"></i>
+<span>先方担当者が上長から厳しく叱責を受ける</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-times-circle text-red-400 mt-1 mr-2"></i>
+<span>他部署からのクレーム発生・サービス解約の危険性</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right Column: Structure & Premise -->
+<div class="card system-card relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-blue-100 rounded-full opacity-50 blur-xl"></div>
+<div class="icon-circle system-icon">
+<i class="fas fa-shield-alt"></i>
+</div>
+<h2 class="text-2xl font-bold text-blue-900 mb-4">品質担保のためのダブルチェック体制</h2>
+<p class="text-gray-700 mb-6 leading-relaxed">
+                開発側は最大限、正常稼働に尽力しますが、外部要因等により<span class="font-bold text-blue-700">「正常に稼働しない事象」は0ではありません。</span>
+                そのため、以下の体制を敷いています。
+            </p>
+<div class="check-flow shadow-sm">
+<div class="text-center">
+<div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center text-xl mx-auto mb-2">
+<i class="fas fa-robot"></i>
+</div>
+<p class="text-xs font-bold text-gray-600">システム転記</p>
+</div>
+<div class="flow-arrow">
+<i class="fas fa-plus"></i>
+</div>
+<div class="text-center">
+<div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center text-xl mx-auto mb-2">
+<i class="fas fa-eye"></i>
+</div>
+<p class="text-xs font-bold text-gray-600">人の目視確認</p>
+</div>
+<div class="flow-arrow">
+<i class="fas fa-arrow-right"></i>
+</div>
+<div class="text-center">
+<div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-xl mx-auto mb-2">
+<i class="fas fa-check-circle"></i>
+</div>
+<p class="text-xs font-bold text-gray-600">品質担保</p>
+</div>
+</div>
+<div class="mt-6 bg-blue-50 p-4 rounded-lg border border-blue-100">
+<p class="text-sm text-blue-800 font-bold mb-1">
+<i class="fas fa-bullhorn mr-2"></i>お客様との目線合わせ
+                </p>
+<p class="text-sm text-gray-600">
+                    「不具合の可能性はゼロではない」ことを前提にお話しいただき、転記状況の監視にご協力いただけるよう調整をお願いします。
+                </p>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide2.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide4.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 3</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>転記ができなくなる主な原因と初動対応</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 4rem;
+        align-items: stretch;
+    }
+    .column-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid;
+    }
+    .cause-item {
+        display: flex;
+        align-items: flex-start;
+        background-color: #f9fafb;
+        border-radius: 0.75rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-left: 4px solid #ef4444; /* Red for errors */
+        transition: transform 0.2s;
+    }
+    .cause-icon {
+        min-width: 40px;
+        height: 40px;
+        background-color: #fee2e2;
+        color: #ef4444;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        font-size: 1.1rem;
+    }
+    .step-card {
+        position: relative;
+        background-color: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.75rem;
+        padding: 1rem 1.25rem;
+        margin-bottom: 1.25rem;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+    .step-number {
+        background-color: #2563eb;
+        color: white;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 0.875rem;
+        margin-right: 1rem;
+        flex-shrink: 0;
+    }
+    .step-connector {
+        position: absolute;
+        left: 26px; /* Center of the number circle */
+        top: 40px;
+        bottom: -25px;
+        width: 2px;
+        background-color: #dbeafe;
+        z-index: 0;
+    }
+    .last-step .step-connector {
+        display: none;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 02</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">転記ができなくなる主な原因と初動対応</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left Column: Causes -->
+<div class="flex-1">
+<h2 class="column-title text-gray-700 border-red-400">
+<i class="fas fa-exclamation-circle mr-3 text-red-500"></i>
+                    主なエラー発生原因
+                </h2>
+<div class="space-y-4">
+<div class="cause-item">
+<div class="cause-icon"><i class="fas fa-tools"></i></div>
+<div>
+<p class="font-bold text-gray-800 mb-1">ATSのメンテナンス・仕様変更</p>
+<p class="text-sm text-gray-600">先方サイトのレイアウト変更や定期メンテにより、システムが要素を見つけられなくなる。</p>
+</div>
+</div>
+<div class="cause-item" style="border-left-color: #f59e0b;">
+<div class="cause-icon" style="background-color: #fef3c7; color: #f59e0b;"><i class="fas fa-key"></i></div>
+<div>
+<p class="font-bold text-gray-800 mb-1">ID・パスワードの問題</p>
+<p class="text-sm text-gray-600">変更後の連絡漏れ、または有効期限切れによるログイン失敗。</p>
+</div>
+</div>
+<div class="cause-item" style="border-left-color: #3b82f6;">
+<div class="cause-icon" style="background-color: #dbeafe; color: #3b82f6;"><i class="fas fa-file-csv"></i></div>
+<div>
+<p class="font-bold text-gray-800 mb-1">スプレッドシート読み取りエラー</p>
+<p class="text-sm text-gray-600">必須項目の入力漏れや、想定外のデータ形式によるエラー。</p>
+</div>
+</div>
+<div class="cause-item" style="border-left-color: #6b7280;">
+<div class="cause-icon" style="background-color: #f3f4f6; color: #6b7280;"><i class="fas fa-question"></i></div>
+<div>
+<p class="font-bold text-gray-800 mb-1">その他</p>
+<p class="text-sm text-gray-600">ネットワーク接続不良や、不明な理由による一時的な停止。</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Actions -->
+<div class="flex-1 bg-blue-50 rounded-xl p-6 border border-blue-100">
+<h2 class="column-title text-blue-800 border-blue-400 mb-6">
+<i class="fas fa-tasks mr-3 text-blue-600"></i>
+                    初動対応フロー
+                </h2>
+<div class="pl-2">
+<!-- Step 1 -->
+<div class="step-card">
+<div class="step-connector"></div>
+<div class="step-number">1</div>
+<div class="flex-1">
+<p class="font-bold text-gray-800 text-sm">Chatwork通知を確認</p>
+<p class="text-xs text-gray-600 mt-1">通知ルームのエラー内容を把握する。</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="step-card">
+<div class="step-connector"></div>
+<div class="step-number">2</div>
+<div class="flex-1">
+<p class="font-bold text-gray-800 text-sm">ログイン可否を確認</p>
+<p class="text-xs text-gray-600 mt-1">共有されているID/PWで手動ログインできるか確認。</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-card">
+<div class="step-connector"></div>
+<div class="step-number">3</div>
+<div class="flex-1">
+<p class="font-bold text-gray-800 text-sm">暫定対応（手動転記）</p>
+<p class="text-xs text-gray-600 mt-1">「手動転記を行う場合がある」旨を先方へ共有し、手動で対応。</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="step-card last-step border-l-4 border-l-blue-500">
+<div class="step-number bg-blue-600"><i class="fas fa-paper-plane text-xs"></i></div>
+<div class="flex-1">
+<p class="font-bold text-blue-800 text-sm">開発へ連絡</p>
+<p class="text-xs text-gray-600 mt-1">「Vietnam 新規開発タスク依頼」チャットへ状況を報告。</p>
+</div>
+</div>
+</div>
+<div class="mt-4 bg-white p-3 rounded border border-blue-200 flex items-start shadow-sm">
+<i class="fas fa-info-circle text-blue-500 mt-1 mr-2"></i>
+<p class="text-xs text-gray-600 leading-relaxed">
+<span class="font-bold text-blue-700">Point:</span> サイトへの転記はDYM側でエラー検知できない場合があります。先方からの連絡体制構築も重要です。
+</p>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 pb-8">
+<a href="slide3.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide5.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 4</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>重要な連携事項</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 2rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    .card {
+        flex: 1;
+        border-radius: 1rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+    /* Critical Card Style (Red/Orange for ID/PW) */
+    .critical-card {
+        background-color: #fff7ed; /* Light Orange */
+        border: 1px solid #fed7aa;
+    }
+    .critical-icon {
+        background-color: #ffedd5;
+        color: #ea580c;
+    }
+    /* Process Card Style (Blue for Flow) */
+    .process-card {
+        background-color: #eff6ff; /* Light Blue */
+        border: 1px solid #bfdbfe;
+    }
+    .process-icon {
+        background-color: #dbeafe;
+        color: #2563eb;
+    }
+    
+    .icon-circle {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .alert-box {
+        background-color: white;
+        border-left: 4px solid #ea580c;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        margin-bottom: 1rem;
+    }
+
+    .flow-box {
+        background-color: white;
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+        border: 1px solid #e5e7eb;
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-2">
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-bold tracking-wider mr-3">IMPORTANT</span>
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 03</p>
+</div>
+<h1 class="text-4xl font-black text-gray-800">重要な連携事項</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left Column: ID/PW Management -->
+<div class="card critical-card relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-orange-100 rounded-full opacity-50 blur-xl"></div>
+<div class="icon-circle critical-icon">
+<i class="fas fa-key"></i>
+</div>
+<h2 class="text-2xl font-bold text-orange-800 mb-4">ID/PW管理と運用の前提</h2>
+<p class="text-gray-700 mb-6 leading-relaxed">
+                システムは提供されたID/パスワードでログインを行います。<br/>
+                変更時の連絡漏れは、即座に転記停止につながります。
+            </p>
+<div class="alert-box">
+<h3 class="text-orange-700 font-bold text-sm mb-2 flex items-center">
+<i class="fas fa-exclamation-circle mr-2"></i> 必ずご連絡ください
+                </h3>
+<p class="text-sm text-gray-600">
+                    管理画面のID/パスワードを変更する際は、<strong>変更前に</strong>必ずご連絡をお願いします。事後連絡の場合、エラーが多発する原因となります。
+                </p>
+</div>
+<div class="mt-auto bg-white/60 p-4 rounded-lg border border-orange-100">
+<h3 class="text-orange-800 font-bold text-sm mb-2">
+<i class="fas fa-hand-paper mr-2"></i>手動転記への理解
+                </h3>
+<ul class="space-y-2 text-sm text-gray-700">
+<li class="flex items-start">
+<i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+<span>システムエラー時は手動で転記を行う場合がある</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+<span>上記前提を先方にご理解いただけるようご説明ください</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right Column: Communication Flow -->
+<div class="card process-card relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-blue-100 rounded-full opacity-50 blur-xl"></div>
+<div class="icon-circle process-icon">
+<i class="fas fa-comments"></i>
+</div>
+<h2 class="text-2xl font-bold text-blue-900 mb-4">不具合連絡フローの構築</h2>
+<p class="text-gray-700 mb-6 leading-relaxed">
+                特にサイトへの直接転記の場合、DYM側で管理画面を確認できないケースが多く、先方からの連絡が唯一の検知手段となります。
+            </p>
+<div class="flow-box">
+<div class="flex items-center justify-between mb-3">
+<div class="text-center">
+<div class="text-2xl text-blue-600 mb-1"><i class="fas fa-building"></i></div>
+<div class="text-xs font-bold text-gray-500">先方(お客様)</div>
+</div>
+<div class="flex-1 border-t-2 border-dashed border-blue-300 mx-4 relative">
+<div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-2 text-xs text-blue-500 font-bold">気づき・連絡</div>
+</div>
+<div class="text-center">
+<div class="text-2xl text-blue-600 mb-1"><i class="fas fa-user-tie"></i></div>
+<div class="text-xs font-bold text-gray-500">CS/運用担当</div>
+</div>
+</div>
+<p class="text-sm text-gray-600 bg-blue-50 p-2 rounded">
+                    先方で不具合に気づいた際、すぐに担当者へ連絡が来るようなフロー（連絡網）を事前に組んでいただくことが重要です。
+                </p>
+</div>
+<div class="mt-auto">
+<h3 class="text-blue-800 font-bold text-sm mb-2">
+<i class="fas fa-search mr-2"></i>DYM側で確認できない場合のリスク
+                </h3>
+<ul class="space-y-2 text-sm text-gray-700">
+<li class="flex items-start">
+<i class="fas fa-eye-slash text-blue-400 mt-1 mr-2"></i>
+<span>サイト転記等は開発側で成功可否が見えない</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-bullhorn text-blue-400 mt-1 mr-2"></i>
+<span>先方からのフィードバックがないとエラーが放置される</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide4.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide6.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 5</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>開発スケジュールとルール</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem;
+        gap: 1.5rem; /* Reduced gap to fit content */
+    }
+    .time-badge {
+        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+    }
+    .flow-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 1rem 0;
+    }
+    .flow-line {
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        right: 50px;
+        height: 3px;
+        background-color: #e5e7eb;
+        z-index: 0;
+        transform: translateY(-50%);
+    }
+    .flow-step {
+        position: relative;
+        z-index: 1;
+        background-color: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 1rem;
+        padding: 1.25rem;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .flow-step.active {
+        border-color: #2563eb;
+        background-color: #eff6ff;
+    }
+    .step-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #f3f4f6;
+        color: #6b7280;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+    }
+    .active .step-icon {
+        background-color: #2563eb;
+        color: white;
+    }
+    .info-card {
+        background-color: #f8fafc;
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        border: 1px solid #e2e8f0;
+        height: 100%;
+    }
+    .warning-card {
+        background-color: #fef2f2;
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        border: 1px solid #fee2e2;
+        height: 100%;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+    /* Custom Bullet Point */
+    .custom-list li {
+        position: relative;
+        padding-left: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .custom-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #2563eb;
+        font-weight: bold;
+    }
+    .warning-list li::before {
+        color: #ef4444;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 03</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">開発スケジュールとルール</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Timeline Estimation -->
+<div class="time-badge">
+<div class="flex items-center">
+<div class="bg-white/20 p-3 rounded-lg mr-4">
+<i class="far fa-clock text-2xl"></i>
+</div>
+<div>
+<p class="text-sm text-blue-100 font-medium mb-0">開発期間の目安（対応実績ATS + 情報完備時）</p>
+<p class="text-2xl font-bold tracking-wide">依頼日を含めず 5営業日以上</p>
+</div>
+</div>
+<div class="bg-white text-blue-700 px-4 py-2 rounded font-bold text-sm">
+                Standard Timeline
+            </div>
+</div>
+<!-- Development Flow -->
+<div>
+<p class="text-gray-500 text-sm font-bold mb-2 ml-2">開発・リリースの流れ</p>
+<div class="flow-container">
+<div class="flow-line"></div>
+<div class="flow-step active">
+<div class="step-icon"><i class="fas fa-laptop-code"></i></div>
+<p class="font-bold text-gray-800 mb-1">1. 開発・テスト</p>
+<p class="text-xs text-gray-600">エンジニアPC上で開発<br/>基本動作の確認</p>
+</div>
+<div class="flow-step active">
+<div class="step-icon"><i class="fas fa-server"></i></div>
+<p class="font-bold text-gray-800 mb-1">2. サーバー検証</p>
+<p class="text-xs text-gray-600">本番環境に近いサーバー上で<br/>動作テスト・修正</p>
+</div>
+<div class="flow-step active">
+<div class="step-icon"><i class="fas fa-rocket"></i></div>
+<p class="font-bold text-gray-800 mb-1">3. リリース</p>
+<p class="text-xs text-gray-600">先方確認完了後<br/>本番稼働スタート</p>
+</div>
+</div>
+</div>
+<!-- Bottom Grid: Test Data & Restrictions -->
+<div class="grid grid-cols-2 gap-6 flex-1">
+<!-- Left: Test Data -->
+<div class="info-card">
+<h3 class="text-blue-800 font-bold mb-3 flex items-center">
+<i class="fas fa-vial mr-2"></i>テストデータの事前準備
+                </h3>
+<ul class="text-sm text-gray-700 custom-list space-y-2">
+<li><p>テスト用応募者データをあらかじめ先方と決定</p></li>
+<li><p>先方のルール（使用可能求人など）に準拠して迷惑防止</p></li>
+<li><p><strong>リリース前や改修後に約20回程度</strong>、任意にテストできる状態が理想</p></li>
+<li><p class="text-gray-500 text-xs mt-1">※ベトナム（開発）でのテスト実施に伴い、日本の営業時間外にもテストできると早期リリースが可能</p></li>
+</ul>
+</div>
+<!-- Right: Warning / Restrictions -->
+<div class="warning-card">
+<h3 class="text-red-700 font-bold mb-3 flex items-center">
+<i class="fas fa-ban mr-2"></i>対応不可のタイミング
+                </h3>
+<div class="flex items-start mb-3">
+<div class="bg-red-100 text-red-600 px-3 py-1 rounded text-xs font-bold whitespace-nowrap mr-3 mt-1">
+                        実施しない
+                    </div>
+<p class="text-sm text-gray-800 font-bold">夜間 ・ 週末 ・ 連休前のスタート/改修反映</p>
+</div>
+<p class="text-xs text-gray-600 mb-3 leading-relaxed">
+<span class="font-bold text-red-600">理由:</span> 問題が発生した場合、営業日・営業時間帯と同様の即時対応・リカバリーが困難であるため。
+                </p>
+<ul class="text-sm text-gray-700 custom-list warning-list">
+<li><p>安全な運用のため、平日の営業時間内での対応を原則とします</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide5.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide7.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 6</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>依頼方法の重要ポイント</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    .checklist-container {
+        flex: 1.4;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .checklist-item {
+        display: flex;
+        align-items: flex-start;
+        background-color: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        transition: transform 0.2s ease;
+    }
+    .check-icon-box {
+        min-width: 48px;
+        height: 48px;
+        background-color: #eff6ff;
+        color: #2563eb;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        margin-right: 1.25rem;
+        flex-shrink: 0;
+    }
+    .info-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .contact-card {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+    .contact-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #bfdbfe;
+    }
+    .chat-badge {
+        background-color: #ef4444;
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        margin-left: auto;
+    }
+    .flow-step {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #e5e7eb;
+        margin-bottom: 0.5rem;
+    }
+    .step-num {
+        background-color: #94a3b8;
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        font-weight: bold;
+        margin-right: 0.75rem;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 04</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">依頼方法の重要ポイント</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left: Checklist -->
+<div class="checklist-container">
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-file-alt"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">依頼は「依頼シート」に記載</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        チャットや電話のみの依頼は不可です。実装漏れを防ぎ、正確に実装するために、必ずシートへの記載をお願いします。
+                    </p>
+</div>
+</div>
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-bullseye"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">初回で依頼を完結させる</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        追加依頼や後出しの修正は、納期遅延やミスの原因となります。なるべく初回で要件を網羅してください。
+                    </p>
+</div>
+</div>
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-comments"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">チャットのこまめな確認</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        開発側からの確認事項にお返事が遅れると、その分だけ納品も遅くなります。「Vietnam 新規開発タスク依頼」を常時チェックしてください。
+                    </p>
+</div>
+</div>
+</div>
+<!-- Right: Contact Info & Flow -->
+<div class="info-container">
+<!-- Contact Channel -->
+<div class="contact-card">
+<div class="contact-header">
+<i class="fas fa-comment-dots text-blue-600 text-xl mr-3"></i>
+<h3 class="text-lg font-bold text-gray-800">連絡窓口</h3>
+<span class="chat-badge">指定チャットのみ</span>
+</div>
+<div class="bg-white p-3 rounded border border-gray-200 mb-3">
+<p class="text-sm font-bold text-gray-700">
+<i class="fab fa-slack text-gray-400 mr-2"></i>Vietnam 新規開発タスク依頼
+                    </p>
+<p class="text-xs text-gray-500 mt-1 ml-6">（スクレイピングは別チャット）</p>
+</div>
+<p class="text-xs text-red-500 font-bold flex items-center">
+<i class="fas fa-exclamation-circle mr-2"></i>
+                    個別チャットや新規グループ作成はNG
+                </p>
+</div>
+<!-- Support Flow -->
+<div class="contact-card bg-white">
+<div class="contact-header border-blue-200">
+<i class="fas fa-question-circle text-blue-500 text-xl mr-3"></i>
+<h3 class="text-lg font-bold text-gray-800">不明点の相談フロー</h3>
+</div>
+<div class="flow-step">
+<div class="step-num">1</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-gray-700">上長・経験者へ確認</p>
+<p class="text-xs text-gray-500">近くのメンバーへの相談が最速です</p>
+</div>
+</div>
+<div class="text-center text-gray-300 my-1"><i class="fas fa-arrow-down"></i></div>
+<div class="flow-step">
+<div class="step-num bg-blue-600">2</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-gray-700">木戸へ連絡</p>
+<p class="text-xs text-gray-500">上記チャット or Messenger電話のみ</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide6.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide8.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 7</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>依頼時に必要な情報</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        padding: 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        height: 100%;
+    }
+    .info-card {
+        background-color: white;
+        border-radius: 0.75rem;
+        border: 1px solid #e5e7eb;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        transition: transform 0.2s, box-shadow 0.2s;
+        position: relative;
+        overflow: hidden;
+    }
+    .info-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+        border-color: #bfdbfe;
+    }
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #f3f4f6;
+    }
+    .icon-box {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        margin-right: 0.75rem;
+    }
+    .card-title {
+        font-weight: 700;
+        font-size: 1rem;
+        color: #1f2937;
+    }
+    .example-box {
+        margin-top: auto;
+        background-color: #f8fafc;
+        border-radius: 6px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+        border-left: 3px solid #cbd5e1;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 05</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">依頼時に必要な情報（必須項目）</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<div class="grid-container">
+<!-- Card 1: Mapping -->
+<div class="info-card border-t-4 border-t-blue-500">
+<div class="card-header">
+<div class="icon-box bg-blue-100 text-blue-600">
+<i class="fas fa-calculator"></i>
+</div>
+<p class="card-title">マッピングは関数対応</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-3 leading-relaxed">
+                    マッピングはご自身で関数で対応をお願いします。
+                </p>
+<p class="text-xs text-gray-500 mb-2">
+<i class="fas fa-check-circle text-green-500 mr-1"></i> 転記エラー発生時に原因が特定しやすい
+                </p>
+<p class="text-xs text-gray-500">
+<i class="fas fa-check-circle text-green-500 mr-1"></i> 引継ぎ時にリスト上で確認が容易
+                </p>
+</div>
+</div>
+<!-- Card 2: Login Info -->
+<div class="info-card border-t-4 border-t-yellow-500">
+<div class="card-header">
+<div class="icon-box bg-yellow-100 text-yellow-600">
+<i class="fas fa-key"></i>
+</div>
+<p class="card-title">ログイン情報の共有</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-3">
+                    ログイン確認済みの以下3点を共有してください。
+                </p>
+<ul class="text-sm text-gray-700 font-bold ml-4 list-disc mb-2">
+<li>ログインID</li>
+<li>パスワード</li>
+<li>ログインURL</li>
+</ul>
+<p class="text-xs text-red-500 font-bold">
+<i class="fas fa-exclamation-circle mr-1"></i> 必ずログインできることを確認してください
+                </p>
+</div>
+</div>
+<!-- Card 3: Correspondence Table -->
+<div class="info-card border-t-4 border-t-green-500">
+<div class="card-header">
+<div class="icon-box bg-green-100 text-green-600">
+<i class="fas fa-table-columns"></i>
+</div>
+<p class="card-title">転記項目の対応関係</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-2 leading-relaxed">
+                    「スプレッドシートのどの列」を「ATSのどこ」に転記するか明記してください。
+                </p>
+</div>
+<div class="example-box border-l-green-400">
+<p class="text-green-800 font-bold mb-1">Point:</p>
+<p class="text-gray-600">項目名だけでなく、具体的な列番号やATS上の項目名で指定すると確実です。</p>
+</div>
+</div>
+<!-- Card 4: Blank Rules -->
+<div class="info-card border-t-4 border-t-purple-500">
+<div class="card-header">
+<div class="icon-box bg-purple-100 text-purple-600">
+<i class="fas fa-pen-to-square"></i>
+</div>
+<p class="card-title">必須項目が空白の場合</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-2">
+                    ATS上の必須項目がリストにない場合等の対応ルールを記載してください。
+                </p>
+</div>
+<div class="example-box border-l-purple-400">
+<p class="text-purple-800 font-bold mb-1">例:</p>
+<p class="text-gray-600">フリガナが空白の場合は「-（ハイフン）」で登録する。</p>
+</div>
+</div>
+<!-- Card 5: ATS Specs -->
+<div class="info-card border-t-4 border-t-red-500">
+<div class="card-header">
+<div class="icon-box bg-red-100 text-red-600">
+<i class="fas fa-ban"></i>
+</div>
+<p class="card-title">ATS仕様内での依頼</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-2">
+                    ATSの仕様上、実現可能な内容でご依頼ください。
+                </p>
+</div>
+<div class="example-box border-l-red-400">
+<p class="text-red-800 font-bold mb-1">NG例:</p>
+<p class="text-gray-600">生年月日がない時は「1900年」で登録<br/><span class="text-red-500 text-xs">→ 選択肢に1900年が存在しないため実装不可</span></p>
+</div>
+</div>
+<!-- Card 6: Test Data -->
+<div class="info-card border-t-4 border-t-indigo-500">
+<div class="card-header">
+<div class="icon-box bg-indigo-100 text-indigo-600">
+<i class="fas fa-vial"></i>
+</div>
+<p class="card-title">テスト用応募者情報</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-2">
+                    実際の応募に即した表記・値でご記載ください。
+                </p>
+</div>
+<div class="example-box border-l-indigo-400">
+<p class="text-indigo-800 font-bold mb-1">注意点:</p>
+<p class="text-gray-600">× テストデータ 性別：女<br/>〇 実際 性別：女性<br/><span class="text-xs text-gray-500">※表記揺れでエラーになる可能性があります</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide7.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide9.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 8</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>転記スタート前のチェック</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    .checklist-container {
+        flex: 1.4;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .checklist-item {
+        display: flex;
+        align-items: flex-start;
+        background-color: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        transition: transform 0.2s ease;
+    }
+    .check-icon-box {
+        min-width: 48px;
+        height: 48px;
+        background-color: #eff6ff;
+        color: #2563eb;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        margin-right: 1.25rem;
+        flex-shrink: 0;
+    }
+    .info-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .contact-card {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+    .contact-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #bfdbfe;
+    }
+    .rule-badge {
+        background-color: #ef4444;
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        margin-left: auto;
+    }
+    .flow-step {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #e5e7eb;
+        margin-bottom: 0.5rem;
+    }
+    .step-num {
+        background-color: #94a3b8;
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        font-weight: bold;
+        margin-right: 0.75rem;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 07</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">転記スタート前のチェック</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left: Checklist -->
+<div class="checklist-container">
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-clipboard-check"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">社内確認と先方確認の実施</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        社内で確認後、必ず先方にもご確認いただいてください。先方のイメージと異なる実装のままリリースすることを防ぐため、認識合わせが重要です。
+                    </p>
+</div>
+</div>
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-tasks"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">転記チェック依頼の提出</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        エンジニア側ですべてのシステムを見切ることは困難です。仕様・画面・必須項目の整合性を担保するため、転記チェック依頼を必ず提出してください。
+                    </p>
+</div>
+</div>
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-clock"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">スタートタイミングの連絡</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        テスト確認やリリースのご連絡をいただくまでは、エンジニア側でシステムをスタートしません。開始のタイミングは必ずご連絡ください。
+                    </p>
+</div>
+</div>
+</div>
+<!-- Right: Contact Info & Flow -->
+<div class="info-container">
+<!-- Important Rule -->
+<div class="contact-card">
+<div class="contact-header">
+<i class="fas fa-user-lock text-blue-600 text-xl mr-3"></i>
+<h3 class="text-lg font-bold text-gray-800">エンジニア側のルール</h3>
+<span class="rule-badge">重要</span>
+</div>
+<div class="bg-white p-4 rounded border border-gray-200 mb-2">
+<p class="text-sm font-bold text-gray-800 mb-2">
+                        勝手にスタートはしません
+                    </p>
+<p class="text-xs text-gray-600 leading-snug">
+                        先方の意図しない内容やタイミングでのリリースによって、ご迷惑をお掛けすることのないようにするためです。
+                    </p>
+</div>
+</div>
+<!-- Approval Flow -->
+<div class="contact-card bg-white">
+<div class="contact-header border-blue-200">
+<i class="fas fa-project-diagram text-blue-500 text-xl mr-3"></i>
+<h3 class="text-lg font-bold text-gray-800">スタートまでのフロー</h3>
+</div>
+<div class="flow-step">
+<div class="step-num">1</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-gray-700">社内・先方確認</p>
+</div>
+</div>
+<div class="text-center text-gray-300 my-1" style="line-height: 0.5;"><i class="fas fa-arrow-down text-xs"></i></div>
+<div class="flow-step">
+<div class="step-num">2</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-gray-700">転記チェック依頼</p>
+</div>
+</div>
+<div class="text-center text-gray-300 my-1" style="line-height: 0.5;"><i class="fas fa-arrow-down text-xs"></i></div>
+<div class="flow-step">
+<div class="step-num bg-blue-600">3</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-gray-700">スタート連絡 → 開始</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide8.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide10.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 9</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>転記スタート後の運用（1週間監視）</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 2rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    .card {
+        flex: 1;
+        border-radius: 1rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+    /* Custom Card Styles based on template structure */
+    .period-card {
+        background-color: #eff6ff; /* Indigo/Blue tint */
+        border: 1px solid #c7d2fe;
+    }
+    .check-card {
+        background-color: #f0fdf4; /* Emerald/Green tint */
+        border: 1px solid #bbf7d0;
+    }
+    .icon-circle {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    .period-icon {
+        background-color: #e0e7ff;
+        color: #4338ca;
+    }
+    .check-icon {
+        background-color: #dcfce7;
+        color: #15803d;
+    }
+    .highlight-box {
+        background-color: white;
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        margin-top: 1rem;
+    }
+    .calendar-visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem 0;
+        position: relative;
+    }
+    .calendar-page {
+        width: 80px;
+        height: 90px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+    }
+    .calendar-header {
+        background: #4338ca;
+        height: 24px;
+        width: 100%;
+    }
+    .calendar-body {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 2rem;
+        color: #333;
+    }
+    .arrow-connector {
+        height: 4px;
+        background: #e5e7eb;
+        flex: 1;
+        margin: 0 10px;
+        position: relative;
+    }
+    .arrow-connector::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -3px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 8px solid #e5e7eb;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-2">
+<span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-bold tracking-wider mr-3">OPERATION</span>
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 08</p>
+</div>
+<h1 class="text-4xl font-black text-gray-800">転記スタート後の運用（1週間監視）</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left Column: Monitoring Period -->
+<div class="card period-card relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-indigo-100 rounded-full opacity-50 blur-2xl"></div>
+<div class="icon-circle period-icon">
+<i class="fas fa-stopwatch"></i>
+</div>
+<h2 class="text-2xl font-bold text-indigo-900 mb-3">スタート後1週間の厳密監視</h2>
+<p class="text-gray-700 mb-4 leading-relaxed">
+                初期不良や想定外の挙動を早期に発見するため、リリース直後の1週間は特に注意深く監視してください。
+            </p>
+<!-- Visual representation of 1 week monitoring -->
+<div class="calendar-visual">
+<div class="calendar-page">
+<div class="calendar-header"></div>
+<div class="calendar-body">1</div>
+</div>
+<div class="arrow-connector"></div>
+<div class="calendar-page transform scale-110 z-10 border-2 border-indigo-500">
+<div class="calendar-header bg-indigo-600"></div>
+<div class="calendar-body text-indigo-600">7</div>
+<div class="absolute bottom-1 w-full text-[10px] text-indigo-600 font-bold">DAYS</div>
+</div>
+</div>
+<div class="bg-white/80 p-4 rounded-lg border border-indigo-100 text-center">
+<p class="text-indigo-800 font-bold text-lg mb-1">
+<i class="fas fa-eye mr-2"></i>毎日確認
+                </p>
+<p class="text-sm text-gray-600">転記状況を毎日チェックしてください</p>
+</div>
+</div>
+<!-- Right Column: Check Items & Actions -->
+<div class="card check-card relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-green-100 rounded-full opacity-50 blur-2xl"></div>
+<div class="icon-circle check-icon">
+<i class="fas fa-clipboard-check"></i>
+</div>
+<h2 class="text-2xl font-bold text-green-900 mb-3">具体的な確認項目とアクション</h2>
+<div class="space-y-4 mt-2">
+<!-- Check Item 1 -->
+<div class="flex items-start">
+<div class="flex-shrink-0 mt-1">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold">1</div>
+</div>
+<div class="ml-3">
+<h3 class="text-lg font-bold text-gray-800">ATS実データの確認</h3>
+<p class="text-sm text-gray-600 mt-1">
+                        応募者リストだけでなく、<span class="font-bold text-red-600 border-b border-red-300">実際のATS画面</span>で正しく転記されているか確認してください。
+                    </p>
+</div>
+</div>
+<!-- Check Item 2 -->
+<div class="flex items-start">
+<div class="flex-shrink-0 mt-1">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold">2</div>
+</div>
+<div class="ml-3">
+<h3 class="text-lg font-bold text-gray-800">DYM確認不可案件の対応</h3>
+<p class="text-sm text-gray-600 mt-1">
+                        DYM側でログイン・確認できない案件は、<span class="font-bold text-gray-800">先方に細かく確認依頼</span>を行ってください。
+                    </p>
+</div>
+</div>
+<!-- Check Item 3 -->
+<div class="flex items-start">
+<div class="flex-shrink-0 mt-1">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold">3</div>
+</div>
+<div class="ml-3">
+<h3 class="text-lg font-bold text-gray-800">異常時の即時連絡</h3>
+<p class="text-sm text-gray-600 mt-1">
+                        エラー発見時は、Vietnam新規開発タスク依頼チャットへすぐにご連絡ください。
+                    </p>
+</div>
+</div>
+</div>
+<div class="mt-auto pt-4">
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded-r-md">
+<div class="flex">
+<div class="flex-shrink-0">
+<i class="fas fa-exclamation-circle text-yellow-500"></i>
+</div>
+<div class="ml-3">
+<p class="text-xs text-yellow-700">
+<span class="font-bold">ご注意:</span> 開発側からの自動的な転記チェック依頼はありません。ご自身でチェックフローを回してください。
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide8.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide11.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 10</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chatwork通知の活用</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    /* Left Column Styles */
+    .cw-screen-mockup {
+        background-color: #f5f5f4;
+        border: 1px solid #d6d3d1;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cw-header {
+        background-color: #2e3842;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 0.9rem;
+    }
+    .cw-body {
+        background-color: white;
+        flex: 1;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: hidden;
+    }
+    .cw-message {
+        background-color: #fff;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 10px;
+        border-left: 4px solid transparent;
+    }
+    .cw-message.alert {
+        background-color: #fff1f2;
+        border-left-color: #ef4444;
+    }
+    .tips-box {
+        background-color: #fffbeb;
+        border: 1px solid #fcd34d;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    /* Right Column Styles */
+    .action-card {
+        background-color: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        display: flex;
+        align-items: flex-start;
+        transition: transform 0.2s;
+    }
+    .action-card:hover {
+        transform: translateX(5px);
+        border-color: #93c5fd;
+    }
+    .notification-sample {
+        background-color: #1f2937;
+        color: #d1d5db;
+        font-family: monospace;
+        padding: 0.75rem;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        margin-bottom: 0.75rem;
+        border-left: 3px solid #ef4444;
+        width: 100%;
+    }
+    .action-arrow {
+        color: #9ca3af;
+        margin: 0 1rem;
+        padding-top: 1.5rem;
+    }
+    .response-box {
+        flex: 1;
+    }
+    .escalation-box {
+        background-color: #eff6ff;
+        border: 2px dashed #3b82f6;
+        border-radius: 12px;
+        padding: 1rem;
+        text-align: center;
+        margin-top: auto;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 09</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">Chatwork通知の活用</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left Column: Monitoring Setup -->
+<div class="w-1/3 flex flex-col">
+<h2 class="text-lg font-bold text-gray-700 mb-4 flex items-center">
+<i class="fas fa-desktop mr-2 text-gray-500"></i> 監視体制の構築
+            </h2>
+<div class="cw-screen-mockup">
+<div class="cw-header">
+<i class="fas fa-hashtag mr-2 text-gray-400"></i>
+<span class="font-bold">転記状況通知ルーム</span>
+<div class="ml-auto flex space-x-2">
+<i class="fas fa-thumbtack text-xs text-yellow-400"></i>
+<i class="fas fa-bell text-xs"></i>
+</div>
+</div>
+<div class="cw-body relative">
+<!-- Messages -->
+<div class="cw-message">
+<div class="flex items-center mb-1">
+<div class="w-6 h-6 rounded bg-gray-300 mr-2"></div>
+<span class="text-xs font-bold text-gray-600">System Bot</span>
+<span class="text-xs text-gray-400 ml-auto">09:00</span>
+</div>
+<p class="text-xs text-gray-500">転記処理を開始します。</p>
+</div>
+<div class="cw-message alert">
+<div class="flex items-center mb-1">
+<div class="w-6 h-6 rounded bg-red-200 mr-2"></div>
+<span class="text-xs font-bold text-red-600">Error Alert</span>
+<span class="text-xs text-gray-400 ml-auto">09:05</span>
+</div>
+<p class="text-xs text-red-800 font-bold">[Error] ログインに失敗しました...</p>
+</div>
+<!-- Pointer Overlay -->
+<div class="absolute bottom-4 right-4">
+<i class="fas fa-mouse-pointer text-blue-600 text-2xl drop-shadow-md animate-bounce"></i>
+</div>
+</div>
+</div>
+<div class="tips-box">
+<h3 class="text-sm font-bold text-yellow-800 mb-2">
+<i class="fas fa-lightbulb mr-2"></i>見逃し防止テクニック
+                </h3>
+<ul class="text-sm text-gray-700 space-y-2">
+<li class="flex items-start">
+<i class="fas fa-check text-yellow-600 mt-1 mr-2 text-xs"></i>
+<span>通知設定を<strong>「すべてのメッセージ」</strong>にする</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check text-yellow-600 mt-1 mr-2 text-xs"></i>
+<span>ルームを<strong>「ピン留め」</strong>して常に上位表示</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right Column: Action Flows -->
+<div class="w-2/3 flex flex-col">
+<h2 class="text-lg font-bold text-gray-700 mb-4 flex items-center">
+<i class="fas fa-bolt mr-2 text-blue-500"></i> 通知内容別の初動対応
+            </h2>
+<!-- Case 1 -->
+<div class="action-card">
+<div class="w-1/2 pr-4">
+<p class="text-xs font-bold text-gray-500 mb-1">Case 1: ログインエラー</p>
+<div class="notification-sample">
+                        Error: Login Failed<br/>
+                        ID/PWが無効か、有効期限切れの可能性があります。
+                    </div>
+</div>
+<div class="action-arrow"><i class="fas fa-arrow-right"></i></div>
+<div class="response-box">
+<p class="text-sm font-bold text-blue-800 mb-2">対応アクション</p>
+<ul class="text-sm text-gray-600 list-disc ml-4 space-y-1">
+<li>ログインできるか手動で確認</li>
+<li>ID/PWの変更有無を先方に確認</li>
+<li>正しい情報を依頼シートに更新</li>
+</ul>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="action-card">
+<div class="w-1/2 pr-4">
+<p class="text-xs font-bold text-gray-500 mb-1">Case 2: 仕様変更・その他エラー</p>
+<div class="notification-sample">
+                        Error: Element not found<br/>
+                        対象の入力項目が見つかりません。
+                    </div>
+</div>
+<div class="action-arrow"><i class="fas fa-arrow-right"></i></div>
+<div class="response-box">
+<p class="text-sm font-bold text-blue-800 mb-2">対応アクション</p>
+<ul class="text-sm text-gray-600 list-disc ml-4 space-y-1">
+<li>先方サイトのメンテナンス状況を確認</li>
+<li>手動で転記を実施（暫定対応）</li>
+<li>開発チームへ詳細を報告</li>
+</ul>
+</div>
+</div>
+<!-- Escalation -->
+<div class="escalation-box">
+<p class="text-sm font-bold text-blue-700 mb-1">
+<i class="fas fa-exclamation-circle mr-2"></i>異常が継続する場合・判断に迷う場合
+                </p>
+<p class="text-sm text-gray-600">
+                    そのままにせず、速やかに<strong>「Vietnam 新規開発タスク依頼」</strong>チャットへご連絡ください。<br/>
+<span class="text-xs text-gray-500">※より早く対処するため、エラー画面のスクショ等があるとスムーズです。</span>
+</p>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide10.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide12.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 11</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>引継ぎ時の注意事項</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    
+    /* Left Column: Flow */
+    .flow-column {
+        flex: 0 0 35%;
+        display: flex;
+        flex-direction: column;
+    }
+    .flow-step {
+        position: relative;
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 1.25rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+    .flow-step:last-child {
+        margin-bottom: 0;
+    }
+    .step-badge {
+        background-color: #3b82f6;
+        color: white;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-right: 1rem;
+        flex-shrink: 0;
+        box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+    }
+    .step-line {
+        position: absolute;
+        left: 36px; /* padding 1.25rem (20px) + 16px (half of badge) */
+        top: 100%;
+        height: 1.5rem;
+        width: 2px;
+        background-color: #cbd5e1;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+    .flow-step:last-child .step-line {
+        display: none;
+    }
+    
+    /* Right Column: Checklists */
+    .checklist-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .checklist-card {
+        background-color: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 1.25rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        border-top: 4px solid #94a3b8;
+    }
+    .checklist-card.primary {
+        border-top-color: #2563eb;
+    }
+    .checklist-card.warning {
+        border-top-color: #f59e0b;
+    }
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        font-weight: 700;
+        color: #1f2937;
+    }
+    .check-list-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 0.75rem;
+        font-size: 0.9rem;
+        color: #4b5563;
+    }
+    .check-list-item:last-child {
+        margin-bottom: 0;
+    }
+    .check-box {
+        color: #2563eb;
+        margin-right: 0.75rem;
+        margin-top: 0.2rem;
+    }
+    
+    /* Bottom Message */
+    .important-message {
+        margin-top: auto;
+        background-color: #eff6ff;
+        border: 1px dashed #3b82f6;
+        border-radius: 8px;
+        padding: 1rem;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 10</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">引継ぎ時の注意事項</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left: Flow -->
+<div class="flow-column">
+<h2 class="text-lg font-bold text-gray-700 mb-4 pl-2 border-l-4 border-blue-500">
+                引継ぎアクションフロー
+            </h2>
+<!-- Step 1 -->
+<div class="flow-step">
+<div class="step-badge">1</div>
+<div class="flex-1">
+<p class="font-bold text-gray-800">資料の整理・共有</p>
+<p class="text-xs text-gray-500 mt-1">ドキュメントの最新化と権限付与</p>
+</div>
+<div class="step-line"></div>
+</div>
+<!-- Step 2 -->
+<div class="flow-step">
+<div class="step-badge">2</div>
+<div class="flex-1">
+<p class="font-bold text-gray-800">背景・経緯の共有</p>
+<p class="text-xs text-gray-500 mt-1">「なぜこの仕様か」を口頭で伝達</p>
+</div>
+<div class="step-line"></div>
+</div>
+<!-- Step 3 -->
+<div class="flow-step">
+<div class="step-badge">3</div>
+<div class="flex-1">
+<p class="font-bold text-gray-800">ツール権限の移管</p>
+<p class="text-xs text-gray-500 mt-1">ChatworkやID管理の入替</p>
+</div>
+</div>
+</div>
+<!-- Right: Checklists -->
+<div class="checklist-column">
+<div class="grid grid-cols-2 gap-6">
+<!-- Document Checklist -->
+<div class="checklist-card primary">
+<div class="card-header">
+<i class="fas fa-file-alt text-blue-600 mr-2"></i>
+<p>共有ドキュメント</p>
+</div>
+<div class="check-list-item">
+<i class="fas fa-check-square check-box"></i>
+<p><strong>依頼シート</strong><br/><span class="text-xs text-gray-500">過去の依頼履歴が追えるもの</span></p>
+</div>
+<div class="check-list-item">
+<i class="fas fa-check-square check-box"></i>
+<p><strong>マッピング関数</strong><br/><span class="text-xs text-gray-500">スプレッドシートの関数ロジック</span></p>
+</div>
+<div class="check-list-item">
+<i class="fas fa-check-square check-box"></i>
+<p><strong>転記対応表</strong><br/><span class="text-xs text-gray-500">列と項目の対応関係図</span></p>
+</div>
+</div>
+<!-- Knowledge Checklist -->
+<div class="checklist-card warning">
+<div class="card-header">
+<i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+<p>ナレッジ・暗黙知</p>
+</div>
+<div class="check-list-item">
+<i class="fas fa-check-square check-box text-yellow-500"></i>
+<p><strong>先方の確認フロー</strong><br/><span class="text-xs text-gray-500">誰がいつ確認するか</span></p>
+</div>
+<div class="check-list-item">
+<i class="fas fa-check-square check-box text-yellow-500"></i>
+<p><strong>テスト許可求人</strong><br/><span class="text-xs text-gray-500">テストに使ってよいデータ</span></p>
+</div>
+<div class="check-list-item">
+<i class="fas fa-check-square check-box text-yellow-500"></i>
+<p><strong>特有のNGルール</strong><br/><span class="text-xs text-gray-500">やってはいけない操作など</span></p>
+</div>
+</div>
+</div>
+<!-- System/Access Checklist -->
+<div class="checklist-card" style="border-top-color: #10b981;">
+<div class="card-header">
+<i class="fas fa-users-cog text-green-500 mr-2"></i>
+<p>システム・権限設定</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="check-list-item">
+<i class="fas fa-check-square check-box text-green-500"></i>
+<p>通知ルームへの参加</p>
+</div>
+<div class="check-list-item">
+<i class="fas fa-check-square check-box text-green-500"></i>
+<p>開発依頼チャットへの参加</p>
+</div>
+<div class="check-list-item">
+<i class="fas fa-check-square check-box text-green-500"></i>
+<p>ID/PW管理表の権限付与</p>
+</div>
+<div class="check-list-item">
+<i class="fas fa-check-square check-box text-green-500"></i>
+<p>前任者の退出処理</p>
+</div>
+</div>
+</div>
+<!-- Important Note -->
+<div class="important-message">
+<i class="fas fa-info-circle text-blue-600 text-xl mr-3 mt-1"></i>
+<div>
+<p class="font-bold text-blue-800 text-sm mb-1">なぜ引継ぎが重要なのか？</p>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        開発側では、お客様との「口頭での細かい握り」や「運用回避の背景」までは把握しきれません。<br/>
+                        引継ぎ漏れによるトラブルを防ぐため、<strong>背景を含めた社内での確実な引継ぎ</strong>をお願いいたします。
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide11.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide13.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 12</p>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>まとめ・重要ポイント</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 2.5rem;
+        height: calc(100% - 140px); /* Approximate height adjustment */
+    }
+    
+    /* Left Column: 5 Points */
+    .points-container {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .point-item {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 1rem 1.5rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        margin-bottom: 0.875rem; /* Adjusted margin */
+        transition: all 0.2s ease;
+        border-left: 6px solid transparent;
+    }
+    .point-item:last-child {
+        margin-bottom: 0;
+    }
+    .point-item:hover {
+        transform: translateX(5px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .point-number {
+        font-size: 2rem;
+        font-weight: 900;
+        color: #e2e8f0;
+        margin-right: 1.5rem;
+        line-height: 1;
+        min-width: 40px;
+        text-align: center;
+    }
+    .point-item.active .point-number {
+        color: #2563eb;
+    }
+    .point-item.active {
+        border-left-color: #2563eb;
+        background-color: #eff6ff;
+        border-color: #bfdbfe;
+    }
+    
+    /* Right Column: Contact */
+    .contact-container {
+        flex: 1;
+        background-color: #1e293b;
+        border-radius: 16px;
+        padding: 2rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    .contact-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #334155;
+        display: flex;
+        align-items: center;
+    }
+    .contact-box {
+        background-color: #334155;
+        border-radius: 8px;
+        padding: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    .contact-label {
+        font-size: 0.75rem;
+        color: #94a3b8;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    .contact-value {
+        font-weight: 700;
+        font-size: 1rem;
+        display: flex;
+        align-items: flex-start;
+        line-height: 1.5;
+    }
+    .final-message {
+        margin-top: auto;
+        text-align: center;
+        font-size: 0.875rem;
+        color: #cbd5e1;
+        line-height: 1.6;
+        padding-top: 1rem;
+        border-top: 1px solid #334155;
+    }
+    
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Summary</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">まとめ・最重要ポイント</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left: 5 Points -->
+<div class="points-container">
+<div class="point-item active">
+<div class="point-number">01</div>
+<div>
+<p class="text-lg font-bold text-gray-800 mb-1">依頼は「依頼シート」で初回完結</p>
+<p class="text-sm text-gray-600">チャットのみはNG。後出しの修正を防ぎ、納期遅延を回避しましょう。</p>
+</div>
+</div>
+<div class="point-item active">
+<div class="point-number">02</div>
+<div>
+<p class="text-lg font-bold text-gray-800 mb-1">ID/PW変更時は即連絡</p>
+<p class="text-sm text-gray-600">ログイン情報は常に最新に。変更漏れはシステム停止の主原因です。</p>
+</div>
+</div>
+<div class="point-item active">
+<div class="point-number">03</div>
+<div>
+<p class="text-lg font-bold text-gray-800 mb-1">スタート前の確認とチェック依頼</p>
+<p class="text-sm text-gray-600">社内・先方確認を経て、エンジニアへ正式なスタート合図を出してください。</p>
+</div>
+</div>
+<div class="point-item active">
+<div class="point-number">04</div>
+<div>
+<p class="text-lg font-bold text-gray-800 mb-1">スタート後1週間は厳密に監視</p>
+<p class="text-sm text-gray-600">応募者リストだけでなく、ATS本体への転記結果までダブルチェック。</p>
+</div>
+</div>
+<div class="point-item active">
+<div class="point-number">05</div>
+<div>
+<p class="text-lg font-bold text-gray-800 mb-1">連絡窓口の統一</p>
+<p class="text-sm text-gray-600">情報は一箇所に集約。指定チャット以外での個別連絡は禁止です。</p>
+</div>
+</div>
+</div>
+<!-- Right: Contact Info -->
+<div class="contact-container">
+<div class="contact-title">
+<i class="fas fa-address-book mr-3 text-blue-400"></i>
+<p>お問い合わせ窓口</p>
+</div>
+<!-- Chat -->
+<div class="contact-box">
+<p class="contact-label">Primary Channel</p>
+<p class="contact-value text-white">
+<i class="fab fa-slack mt-1 mr-3 text-blue-400"></i>
+<span>Vietnam 新規開発タスク依頼<br/><span class="text-xs text-gray-400 font-normal">（スクレイピングは別チャット）</span></span>
+</p>
+</div>
+<!-- Person -->
+<div class="contact-box">
+<p class="contact-label">Urgent / Consult</p>
+<p class="contact-value text-white">
+<i class="fas fa-user-circle mt-1 mr-3 text-blue-400"></i>
+<span>木戸<br/><span class="text-xs text-gray-400 font-normal">上記チャット or Messenger電話のみ</span></span>
+</p>
+</div>
+<div class="final-message">
+<p>
+                    安定した運用のために、<br/>
+                    皆様のご理解とご協力をお願いいたします。
+                </p>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide12.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 13</p>
+</div>
+</div>
+</body>
+</html>
