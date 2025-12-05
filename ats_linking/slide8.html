@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>依頼時に必要な情報</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        padding: 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        height: 100%;
+    }
+    .info-card {
+        background-color: white;
+        border-radius: 0.75rem;
+        border: 1px solid #e5e7eb;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        transition: transform 0.2s, box-shadow 0.2s;
+        position: relative;
+        overflow: hidden;
+    }
+    .info-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+        border-color: #bfdbfe;
+    }
+    .card-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #f3f4f6;
+    }
+    .icon-box {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        margin-right: 0.75rem;
+    }
+    .card-title {
+        font-weight: 700;
+        font-size: 1rem;
+        color: #1f2937;
+    }
+    .example-box {
+        margin-top: auto;
+        background-color: #f8fafc;
+        border-radius: 6px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+        border-left: 3px solid #cbd5e1;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 05</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">依頼時に必要な情報（必須項目）</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<div class="grid-container">
+<!-- Card 1: Mapping -->
+<div class="info-card border-t-4 border-t-blue-500">
+<div class="card-header">
+<div class="icon-box bg-blue-100 text-blue-600">
+<i class="fas fa-calculator"></i>
+</div>
+<p class="card-title">マッピングは関数対応</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-3 leading-relaxed">
+                    マッピングはご自身で関数で対応をお願いします。
+                </p>
+<p class="text-xs text-gray-500 mb-2">
+<i class="fas fa-check-circle text-green-500 mr-1"></i> 転記エラー発生時に原因が特定しやすい
+                </p>
+<p class="text-xs text-gray-500">
+<i class="fas fa-check-circle text-green-500 mr-1"></i> 引継ぎ時にリスト上で確認が容易
+                </p>
+</div>
+</div>
+<!-- Card 2: Login Info -->
+<div class="info-card border-t-4 border-t-yellow-500">
+<div class="card-header">
+<div class="icon-box bg-yellow-100 text-yellow-600">
+<i class="fas fa-key"></i>
+</div>
+<p class="card-title">ログイン情報の共有</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-3">
+                    ログイン確認済みの以下3点を共有してください。
+                </p>
+<ul class="text-sm text-gray-700 font-bold ml-4 list-disc mb-2">
+<li>ログインID</li>
+<li>パスワード</li>
+<li>ログインURL</li>
+</ul>
+<p class="text-xs text-red-500 font-bold">
+<i class="fas fa-exclamation-circle mr-1"></i> 必ずログインできることを確認してください
+                </p>
+</div>
+</div>
+<!-- Card 3: Correspondence Table -->
+<div class="info-card border-t-4 border-t-green-500">
+<div class="card-header">
+<div class="icon-box bg-green-100 text-green-600">
+<i class="fas fa-table-columns"></i>
+</div>
+<p class="card-title">転記項目の対応関係</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-2 leading-relaxed">
+                    「スプレッドシートのどの列」を「ATSのどこ」に転記するか明記してください。
+                </p>
+</div>
+<div class="example-box border-l-green-400">
+<p class="text-green-800 font-bold mb-1">Point:</p>
+<p class="text-gray-600">項目名だけでなく、具体的な列番号やATS上の項目名で指定すると確実です。</p>
+</div>
+</div>
+<!-- Card 4: Blank Rules -->
+<div class="info-card border-t-4 border-t-purple-500">
+<div class="card-header">
+<div class="icon-box bg-purple-100 text-purple-600">
+<i class="fas fa-pen-to-square"></i>
+</div>
+<p class="card-title">必須項目が空白の場合</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-2">
+                    ATS上の必須項目がリストにない場合等の対応ルールを記載してください。
+                </p>
+</div>
+<div class="example-box border-l-purple-400">
+<p class="text-purple-800 font-bold mb-1">例:</p>
+<p class="text-gray-600">フリガナが空白の場合は「-（ハイフン）」で登録する。</p>
+</div>
+</div>
+<!-- Card 5: ATS Specs -->
+<div class="info-card border-t-4 border-t-red-500">
+<div class="card-header">
+<div class="icon-box bg-red-100 text-red-600">
+<i class="fas fa-ban"></i>
+</div>
+<p class="card-title">ATS仕様内での依頼</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-2">
+                    ATSの仕様上、実現可能な内容でご依頼ください。
+                </p>
+</div>
+<div class="example-box border-l-red-400">
+<p class="text-red-800 font-bold mb-1">NG例:</p>
+<p class="text-gray-600">生年月日がない時は「1900年」で登録<br/><span class="text-red-500 text-xs">→ 選択肢に1900年が存在しないため実装不可</span></p>
+</div>
+</div>
+<!-- Card 6: Test Data -->
+<div class="info-card border-t-4 border-t-indigo-500">
+<div class="card-header">
+<div class="icon-box bg-indigo-100 text-indigo-600">
+<i class="fas fa-vial"></i>
+</div>
+<p class="card-title">テスト用応募者情報</p>
+</div>
+<div class="flex-1">
+<p class="text-sm text-gray-600 mb-2">
+                    実際の応募に即した表記・値でご記載ください。
+                </p>
+</div>
+<div class="example-box border-l-indigo-400">
+<p class="text-indigo-800 font-bold mb-1">注意点:</p>
+<p class="text-gray-600">× テストデータ 性別：女<br/>〇 実際 性別：女性<br/><span class="text-xs text-gray-500">※表記揺れでエラーになる可能性があります</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide7.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide9.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 8</p>
+</div>
+</div>
+</body>
+</html>

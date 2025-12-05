@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>転記スタート前のチェック</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    .checklist-container {
+        flex: 1.4;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .checklist-item {
+        display: flex;
+        align-items: flex-start;
+        background-color: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        transition: transform 0.2s ease;
+    }
+    .check-icon-box {
+        min-width: 48px;
+        height: 48px;
+        background-color: #eff6ff;
+        color: #2563eb;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        margin-right: 1.25rem;
+        flex-shrink: 0;
+    }
+    .info-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .contact-card {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+    .contact-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #bfdbfe;
+    }
+    .rule-badge {
+        background-color: #ef4444;
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        margin-left: auto;
+    }
+    .flow-step {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #e5e7eb;
+        margin-bottom: 0.5rem;
+    }
+    .step-num {
+        background-color: #94a3b8;
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        font-weight: bold;
+        margin-right: 0.75rem;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 07</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">転記スタート前のチェック</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left: Checklist -->
+<div class="checklist-container">
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-clipboard-check"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">社内確認と先方確認の実施</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        社内で確認後、必ず先方にもご確認いただいてください。先方のイメージと異なる実装のままリリースすることを防ぐため、認識合わせが重要です。
+                    </p>
+</div>
+</div>
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-tasks"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">転記チェック依頼の提出</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        エンジニア側ですべてのシステムを見切ることは困難です。仕様・画面・必須項目の整合性を担保するため、転記チェック依頼を必ず提出してください。
+                    </p>
+</div>
+</div>
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-clock"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">スタートタイミングの連絡</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        テスト確認やリリースのご連絡をいただくまでは、エンジニア側でシステムをスタートしません。開始のタイミングは必ずご連絡ください。
+                    </p>
+</div>
+</div>
+</div>
+<!-- Right: Contact Info & Flow -->
+<div class="info-container">
+<!-- Important Rule -->
+<div class="contact-card">
+<div class="contact-header">
+<i class="fas fa-user-lock text-blue-600 text-xl mr-3"></i>
+<h3 class="text-lg font-bold text-gray-800">エンジニア側のルール</h3>
+<span class="rule-badge">重要</span>
+</div>
+<div class="bg-white p-4 rounded border border-gray-200 mb-2">
+<p class="text-sm font-bold text-gray-800 mb-2">
+                        勝手にスタートはしません
+                    </p>
+<p class="text-xs text-gray-600 leading-snug">
+                        先方の意図しない内容やタイミングでのリリースによって、ご迷惑をお掛けすることのないようにするためです。
+                    </p>
+</div>
+</div>
+<!-- Approval Flow -->
+<div class="contact-card bg-white">
+<div class="contact-header border-blue-200">
+<i class="fas fa-project-diagram text-blue-500 text-xl mr-3"></i>
+<h3 class="text-lg font-bold text-gray-800">スタートまでのフロー</h3>
+</div>
+<div class="flow-step">
+<div class="step-num">1</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-gray-700">社内・先方確認</p>
+</div>
+</div>
+<div class="text-center text-gray-300 my-1" style="line-height: 0.5;"><i class="fas fa-arrow-down text-xs"></i></div>
+<div class="flow-step">
+<div class="step-num">2</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-gray-700">転記チェック依頼</p>
+</div>
+</div>
+<div class="text-center text-gray-300 my-1" style="line-height: 0.5;"><i class="fas fa-arrow-down text-xs"></i></div>
+<div class="flow-step">
+<div class="step-num bg-blue-600">3</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-gray-700">スタート連絡 → 開始</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide8.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide10.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 9</p>
+</div>
+</div>
+</body>
+</html>

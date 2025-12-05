@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>依頼方法の重要ポイント</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    .checklist-container {
+        flex: 1.4;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    .checklist-item {
+        display: flex;
+        align-items: flex-start;
+        background-color: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        transition: transform 0.2s ease;
+    }
+    .check-icon-box {
+        min-width: 48px;
+        height: 48px;
+        background-color: #eff6ff;
+        color: #2563eb;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        margin-right: 1.25rem;
+        flex-shrink: 0;
+    }
+    .info-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .contact-card {
+        background-color: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+    .contact-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #bfdbfe;
+    }
+    .chat-badge {
+        background-color: #ef4444;
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        margin-left: auto;
+    }
+    .flow-step {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #e5e7eb;
+        margin-bottom: 0.5rem;
+    }
+    .step-num {
+        background-color: #94a3b8;
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        font-weight: bold;
+        margin-right: 0.75rem;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 04</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">依頼方法の重要ポイント</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left: Checklist -->
+<div class="checklist-container">
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-file-alt"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">依頼は「依頼シート」に記載</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        チャットや電話のみの依頼は不可です。実装漏れを防ぎ、正確に実装するために、必ずシートへの記載をお願いします。
+                    </p>
+</div>
+</div>
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-bullseye"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">初回で依頼を完結させる</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        追加依頼や後出しの修正は、納期遅延やミスの原因となります。なるべく初回で要件を網羅してください。
+                    </p>
+</div>
+</div>
+<div class="checklist-item border-l-4 border-l-blue-600">
+<div class="check-icon-box">
+<i class="fas fa-comments"></i>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 mb-1">チャットのこまめな確認</h3>
+<p class="text-sm text-gray-600 leading-relaxed">
+                        開発側からの確認事項にお返事が遅れると、その分だけ納品も遅くなります。「Vietnam 新規開発タスク依頼」を常時チェックしてください。
+                    </p>
+</div>
+</div>
+</div>
+<!-- Right: Contact Info & Flow -->
+<div class="info-container">
+<!-- Contact Channel -->
+<div class="contact-card">
+<div class="contact-header">
+<i class="fas fa-comment-dots text-blue-600 text-xl mr-3"></i>
+<h3 class="text-lg font-bold text-gray-800">連絡窓口</h3>
+<span class="chat-badge">指定チャットのみ</span>
+</div>
+<div class="bg-white p-3 rounded border border-gray-200 mb-3">
+<p class="text-sm font-bold text-gray-700">
+<i class="fab fa-slack text-gray-400 mr-2"></i>Vietnam 新規開発タスク依頼
+                    </p>
+<p class="text-xs text-gray-500 mt-1 ml-6">（スクレイピングは別チャット）</p>
+</div>
+<p class="text-xs text-red-500 font-bold flex items-center">
+<i class="fas fa-exclamation-circle mr-2"></i>
+                    個別チャットや新規グループ作成はNG
+                </p>
+</div>
+<!-- Support Flow -->
+<div class="contact-card bg-white">
+<div class="contact-header border-blue-200">
+<i class="fas fa-question-circle text-blue-500 text-xl mr-3"></i>
+<h3 class="text-lg font-bold text-gray-800">不明点の相談フロー</h3>
+</div>
+<div class="flow-step">
+<div class="step-num">1</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-gray-700">上長・経験者へ確認</p>
+<p class="text-xs text-gray-500">近くのメンバーへの相談が最速です</p>
+</div>
+</div>
+<div class="text-center text-gray-300 my-1"><i class="fas fa-arrow-down"></i></div>
+<div class="flow-step">
+<div class="step-num bg-blue-600">2</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-gray-700">木戸へ連絡</p>
+<p class="text-xs text-gray-500">上記チャット or Messenger電話のみ</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide6.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide8.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 7</p>
+</div>
+</div>
+</body>
+</html>

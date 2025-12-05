@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chatwork通知の活用</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 1.5rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    /* Left Column Styles */
+    .cw-screen-mockup {
+        background-color: #f5f5f4;
+        border: 1px solid #d6d3d1;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cw-header {
+        background-color: #2e3842;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 0.9rem;
+    }
+    .cw-body {
+        background-color: white;
+        flex: 1;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: hidden;
+    }
+    .cw-message {
+        background-color: #fff;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 10px;
+        border-left: 4px solid transparent;
+    }
+    .cw-message.alert {
+        background-color: #fff1f2;
+        border-left-color: #ef4444;
+    }
+    .tips-box {
+        background-color: #fffbeb;
+        border: 1px solid #fcd34d;
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    /* Right Column Styles */
+    .action-card {
+        background-color: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        display: flex;
+        align-items: flex-start;
+        transition: transform 0.2s;
+    }
+    .action-card:hover {
+        transform: translateX(5px);
+        border-color: #93c5fd;
+    }
+    .notification-sample {
+        background-color: #1f2937;
+        color: #d1d5db;
+        font-family: monospace;
+        padding: 0.75rem;
+        border-radius: 6px;
+        font-size: 0.75rem;
+        margin-bottom: 0.75rem;
+        border-left: 3px solid #ef4444;
+        width: 100%;
+    }
+    .action-arrow {
+        color: #9ca3af;
+        margin: 0 1rem;
+        padding-top: 1.5rem;
+    }
+    .response-box {
+        flex: 1;
+    }
+    .escalation-box {
+        background-color: #eff6ff;
+        border: 2px dashed #3b82f6;
+        border-radius: 12px;
+        padding: 1rem;
+        text-align: center;
+        margin-top: auto;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+        flex-shrink: 0;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-1">
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 09</p>
+</div>
+<h1 class="text-3xl font-black text-gray-800">Chatwork通知の活用</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left Column: Monitoring Setup -->
+<div class="w-1/3 flex flex-col">
+<h2 class="text-lg font-bold text-gray-700 mb-4 flex items-center">
+<i class="fas fa-desktop mr-2 text-gray-500"></i> 監視体制の構築
+            </h2>
+<div class="cw-screen-mockup">
+<div class="cw-header">
+<i class="fas fa-hashtag mr-2 text-gray-400"></i>
+<span class="font-bold">転記状況通知ルーム</span>
+<div class="ml-auto flex space-x-2">
+<i class="fas fa-thumbtack text-xs text-yellow-400"></i>
+<i class="fas fa-bell text-xs"></i>
+</div>
+</div>
+<div class="cw-body relative">
+<!-- Messages -->
+<div class="cw-message">
+<div class="flex items-center mb-1">
+<div class="w-6 h-6 rounded bg-gray-300 mr-2"></div>
+<span class="text-xs font-bold text-gray-600">System Bot</span>
+<span class="text-xs text-gray-400 ml-auto">09:00</span>
+</div>
+<p class="text-xs text-gray-500">転記処理を開始します。</p>
+</div>
+<div class="cw-message alert">
+<div class="flex items-center mb-1">
+<div class="w-6 h-6 rounded bg-red-200 mr-2"></div>
+<span class="text-xs font-bold text-red-600">Error Alert</span>
+<span class="text-xs text-gray-400 ml-auto">09:05</span>
+</div>
+<p class="text-xs text-red-800 font-bold">[Error] ログインに失敗しました...</p>
+</div>
+<!-- Pointer Overlay -->
+<div class="absolute bottom-4 right-4">
+<i class="fas fa-mouse-pointer text-blue-600 text-2xl drop-shadow-md animate-bounce"></i>
+</div>
+</div>
+</div>
+<div class="tips-box">
+<h3 class="text-sm font-bold text-yellow-800 mb-2">
+<i class="fas fa-lightbulb mr-2"></i>見逃し防止テクニック
+                </h3>
+<ul class="text-sm text-gray-700 space-y-2">
+<li class="flex items-start">
+<i class="fas fa-check text-yellow-600 mt-1 mr-2 text-xs"></i>
+<span>通知設定を<strong>「すべてのメッセージ」</strong>にする</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check text-yellow-600 mt-1 mr-2 text-xs"></i>
+<span>ルームを<strong>「ピン留め」</strong>して常に上位表示</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right Column: Action Flows -->
+<div class="w-2/3 flex flex-col">
+<h2 class="text-lg font-bold text-gray-700 mb-4 flex items-center">
+<i class="fas fa-bolt mr-2 text-blue-500"></i> 通知内容別の初動対応
+            </h2>
+<!-- Case 1 -->
+<div class="action-card">
+<div class="w-1/2 pr-4">
+<p class="text-xs font-bold text-gray-500 mb-1">Case 1: ログインエラー</p>
+<div class="notification-sample">
+                        Error: Login Failed<br/>
+                        ID/PWが無効か、有効期限切れの可能性があります。
+                    </div>
+</div>
+<div class="action-arrow"><i class="fas fa-arrow-right"></i></div>
+<div class="response-box">
+<p class="text-sm font-bold text-blue-800 mb-2">対応アクション</p>
+<ul class="text-sm text-gray-600 list-disc ml-4 space-y-1">
+<li>ログインできるか手動で確認</li>
+<li>ID/PWの変更有無を先方に確認</li>
+<li>正しい情報を依頼シートに更新</li>
+</ul>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="action-card">
+<div class="w-1/2 pr-4">
+<p class="text-xs font-bold text-gray-500 mb-1">Case 2: 仕様変更・その他エラー</p>
+<div class="notification-sample">
+                        Error: Element not found<br/>
+                        対象の入力項目が見つかりません。
+                    </div>
+</div>
+<div class="action-arrow"><i class="fas fa-arrow-right"></i></div>
+<div class="response-box">
+<p class="text-sm font-bold text-blue-800 mb-2">対応アクション</p>
+<ul class="text-sm text-gray-600 list-disc ml-4 space-y-1">
+<li>先方サイトのメンテナンス状況を確認</li>
+<li>手動で転記を実施（暫定対応）</li>
+<li>開発チームへ詳細を報告</li>
+</ul>
+</div>
+</div>
+<!-- Escalation -->
+<div class="escalation-box">
+<p class="text-sm font-bold text-blue-700 mb-1">
+<i class="fas fa-exclamation-circle mr-2"></i>異常が継続する場合・判断に迷う場合
+                </p>
+<p class="text-sm text-gray-600">
+                    そのままにせず、速やかに<strong>「Vietnam 新規開発タスク依頼」</strong>チャットへご連絡ください。<br/>
+<span class="text-xs text-gray-500">※より早く対処するため、エラー画面のスクショ等があるとスムーズです。</span>
+</p>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide10.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide12.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 11</p>
+</div>
+</div>
+</body>
+</html>

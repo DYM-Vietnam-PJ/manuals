@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>転記スタート後の運用（1週間監視）</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 2rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    .card {
+        flex: 1;
+        border-radius: 1rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+    /* Custom Card Styles based on template structure */
+    .period-card {
+        background-color: #eff6ff; /* Indigo/Blue tint */
+        border: 1px solid #c7d2fe;
+    }
+    .check-card {
+        background-color: #f0fdf4; /* Emerald/Green tint */
+        border: 1px solid #bbf7d0;
+    }
+    .icon-circle {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    .period-icon {
+        background-color: #e0e7ff;
+        color: #4338ca;
+    }
+    .check-icon {
+        background-color: #dcfce7;
+        color: #15803d;
+    }
+    .highlight-box {
+        background-color: white;
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        margin-top: 1rem;
+    }
+    .calendar-visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.5rem 0;
+        position: relative;
+    }
+    .calendar-page {
+        width: 80px;
+        height: 90px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        text-align: center;
+    }
+    .calendar-header {
+        background: #4338ca;
+        height: 24px;
+        width: 100%;
+    }
+    .calendar-body {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 2rem;
+        color: #333;
+    }
+    .arrow-connector {
+        height: 4px;
+        background: #e5e7eb;
+        flex: 1;
+        margin: 0 10px;
+        position: relative;
+    }
+    .arrow-connector::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -3px;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 8px solid #e5e7eb;
+    }
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-2">
+<span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-bold tracking-wider mr-3">OPERATION</span>
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 08</p>
+</div>
+<h1 class="text-4xl font-black text-gray-800">転記スタート後の運用（1週間監視）</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left Column: Monitoring Period -->
+<div class="card period-card relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-indigo-100 rounded-full opacity-50 blur-2xl"></div>
+<div class="icon-circle period-icon">
+<i class="fas fa-stopwatch"></i>
+</div>
+<h2 class="text-2xl font-bold text-indigo-900 mb-3">スタート後1週間の厳密監視</h2>
+<p class="text-gray-700 mb-4 leading-relaxed">
+                初期不良や想定外の挙動を早期に発見するため、リリース直後の1週間は特に注意深く監視してください。
+            </p>
+<!-- Visual representation of 1 week monitoring -->
+<div class="calendar-visual">
+<div class="calendar-page">
+<div class="calendar-header"></div>
+<div class="calendar-body">1</div>
+</div>
+<div class="arrow-connector"></div>
+<div class="calendar-page transform scale-110 z-10 border-2 border-indigo-500">
+<div class="calendar-header bg-indigo-600"></div>
+<div class="calendar-body text-indigo-600">7</div>
+<div class="absolute bottom-1 w-full text-[10px] text-indigo-600 font-bold">DAYS</div>
+</div>
+</div>
+<div class="bg-white/80 p-4 rounded-lg border border-indigo-100 text-center">
+<p class="text-indigo-800 font-bold text-lg mb-1">
+<i class="fas fa-eye mr-2"></i>毎日確認
+                </p>
+<p class="text-sm text-gray-600">転記状況を毎日チェックしてください</p>
+</div>
+</div>
+<!-- Right Column: Check Items & Actions -->
+<div class="card check-card relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-green-100 rounded-full opacity-50 blur-2xl"></div>
+<div class="icon-circle check-icon">
+<i class="fas fa-clipboard-check"></i>
+</div>
+<h2 class="text-2xl font-bold text-green-900 mb-3">具体的な確認項目とアクション</h2>
+<div class="space-y-4 mt-2">
+<!-- Check Item 1 -->
+<div class="flex items-start">
+<div class="flex-shrink-0 mt-1">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold">1</div>
+</div>
+<div class="ml-3">
+<h3 class="text-lg font-bold text-gray-800">ATS実データの確認</h3>
+<p class="text-sm text-gray-600 mt-1">
+                        応募者リストだけでなく、<span class="font-bold text-red-600 border-b border-red-300">実際のATS画面</span>で正しく転記されているか確認してください。
+                    </p>
+</div>
+</div>
+<!-- Check Item 2 -->
+<div class="flex items-start">
+<div class="flex-shrink-0 mt-1">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold">2</div>
+</div>
+<div class="ml-3">
+<h3 class="text-lg font-bold text-gray-800">DYM確認不可案件の対応</h3>
+<p class="text-sm text-gray-600 mt-1">
+                        DYM側でログイン・確認できない案件は、<span class="font-bold text-gray-800">先方に細かく確認依頼</span>を行ってください。
+                    </p>
+</div>
+</div>
+<!-- Check Item 3 -->
+<div class="flex items-start">
+<div class="flex-shrink-0 mt-1">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold">3</div>
+</div>
+<div class="ml-3">
+<h3 class="text-lg font-bold text-gray-800">異常時の即時連絡</h3>
+<p class="text-sm text-gray-600 mt-1">
+                        エラー発見時は、Vietnam新規開発タスク依頼チャットへすぐにご連絡ください。
+                    </p>
+</div>
+</div>
+</div>
+<div class="mt-auto pt-4">
+<div class="bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded-r-md">
+<div class="flex">
+<div class="flex-shrink-0">
+<i class="fas fa-exclamation-circle text-yellow-500"></i>
+</div>
+<div class="ml-3">
+<p class="text-xs text-yellow-700">
+<span class="font-bold">ご注意:</span> 開発側からの自動的な転記チェック依頼はありません。ご自身でチェックフローを回してください。
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide8.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide11.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 10</p>
+</div>
+</div>
+</body>
+</html>

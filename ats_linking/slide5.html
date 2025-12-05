@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>重要な連携事項</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans JP', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .accent-bar {
+        width: 100%;
+        height: 8px;
+        background-color: #2563eb;
+    }
+    .header {
+        padding: 2rem 4rem 1rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .content-wrapper {
+        flex: 1;
+        display: flex;
+        padding: 2rem 4rem;
+        gap: 3rem;
+    }
+    .card {
+        flex: 1;
+        border-radius: 1rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+    /* Critical Card Style (Red/Orange for ID/PW) */
+    .critical-card {
+        background-color: #fff7ed; /* Light Orange */
+        border: 1px solid #fed7aa;
+    }
+    .critical-icon {
+        background-color: #ffedd5;
+        color: #ea580c;
+    }
+    /* Process Card Style (Blue for Flow) */
+    .process-card {
+        background-color: #eff6ff; /* Light Blue */
+        border: 1px solid #bfdbfe;
+    }
+    .process-icon {
+        background-color: #dbeafe;
+        color: #2563eb;
+    }
+    
+    .icon-circle {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .alert-box {
+        background-color: white;
+        border-left: 4px solid #ea580c;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        margin-bottom: 1rem;
+    }
+
+    .flow-box {
+        background-color: white;
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+        border: 1px solid #e5e7eb;
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        padding: 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9ca3af;
+        font-size: 0.875rem;
+        border-top: 1px solid #f3f4f6;
+    }
+</style>
+</head>
+<body>
+<div class="slide-container">
+<div class="accent-bar"></div>
+<!-- Header -->
+<div class="header">
+<div class="flex items-center mb-2">
+<span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-bold tracking-wider mr-3">IMPORTANT</span>
+<p class="text-gray-500 text-sm font-medium uppercase tracking-widest">Section 03</p>
+</div>
+<h1 class="text-4xl font-black text-gray-800">重要な連携事項</h1>
+</div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<!-- Left Column: ID/PW Management -->
+<div class="card critical-card relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-orange-100 rounded-full opacity-50 blur-xl"></div>
+<div class="icon-circle critical-icon">
+<i class="fas fa-key"></i>
+</div>
+<h2 class="text-2xl font-bold text-orange-800 mb-4">ID/PW管理と運用の前提</h2>
+<p class="text-gray-700 mb-6 leading-relaxed">
+                システムは提供されたID/パスワードでログインを行います。<br/>
+                変更時の連絡漏れは、即座に転記停止につながります。
+            </p>
+<div class="alert-box">
+<h3 class="text-orange-700 font-bold text-sm mb-2 flex items-center">
+<i class="fas fa-exclamation-circle mr-2"></i> 必ずご連絡ください
+                </h3>
+<p class="text-sm text-gray-600">
+                    管理画面のID/パスワードを変更する際は、<strong>変更前に</strong>必ずご連絡をお願いします。事後連絡の場合、エラーが多発する原因となります。
+                </p>
+</div>
+<div class="mt-auto bg-white/60 p-4 rounded-lg border border-orange-100">
+<h3 class="text-orange-800 font-bold text-sm mb-2">
+<i class="fas fa-hand-paper mr-2"></i>手動転記への理解
+                </h3>
+<ul class="space-y-2 text-sm text-gray-700">
+<li class="flex items-start">
+<i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+<span>システムエラー時は手動で転記を行う場合がある</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+<span>上記前提を先方にご理解いただけるようご説明ください</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right Column: Communication Flow -->
+<div class="card process-card relative overflow-hidden">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-blue-100 rounded-full opacity-50 blur-xl"></div>
+<div class="icon-circle process-icon">
+<i class="fas fa-comments"></i>
+</div>
+<h2 class="text-2xl font-bold text-blue-900 mb-4">不具合連絡フローの構築</h2>
+<p class="text-gray-700 mb-6 leading-relaxed">
+                特にサイトへの直接転記の場合、DYM側で管理画面を確認できないケースが多く、先方からの連絡が唯一の検知手段となります。
+            </p>
+<div class="flow-box">
+<div class="flex items-center justify-between mb-3">
+<div class="text-center">
+<div class="text-2xl text-blue-600 mb-1"><i class="fas fa-building"></i></div>
+<div class="text-xs font-bold text-gray-500">先方(お客様)</div>
+</div>
+<div class="flex-1 border-t-2 border-dashed border-blue-300 mx-4 relative">
+<div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-2 text-xs text-blue-500 font-bold">気づき・連絡</div>
+</div>
+<div class="text-center">
+<div class="text-2xl text-blue-600 mb-1"><i class="fas fa-user-tie"></i></div>
+<div class="text-xs font-bold text-gray-500">CS/運用担当</div>
+</div>
+</div>
+<p class="text-sm text-gray-600 bg-blue-50 p-2 rounded">
+                    先方で不具合に気づいた際、すぐに担当者へ連絡が来るようなフロー（連絡網）を事前に組んでいただくことが重要です。
+                </p>
+</div>
+<div class="mt-auto">
+<h3 class="text-blue-800 font-bold text-sm mb-2">
+<i class="fas fa-search mr-2"></i>DYM側で確認できない場合のリスク
+                </h3>
+<ul class="space-y-2 text-sm text-gray-700">
+<li class="flex items-start">
+<i class="fas fa-eye-slash text-blue-400 mt-1 mr-2"></i>
+<span>サイト転記等は開発側で成功可否が見えない</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-bullhorn text-blue-400 mt-1 mr-2"></i>
+<span>先方からのフィードバックがないとエラーが放置される</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-between px-20 py-8">
+<a href="slide4.html" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-3 px-8 rounded-lg shadow-md transition">← 前へ</a>
+<a href="slide6.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer -->
+<div class="footer">
+<p>ATS転記システム運用マニュアル</p>
+<p>Page 5</p>
+</div>
+</div>
+</body>
+</html>

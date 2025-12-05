@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ATS転記システム運用マニュアル</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .accent-bar {
+            width: 100%;
+            height: 12px;
+            background-color: #2563eb; /* Blue-600 */
+        }
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 6rem;
+            position: relative;
+            z-index: 10;
+        }
+        .decorative-circle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.05;
+            z-index: 0;
+        }
+        .circle-1 {
+            width: 400px;
+            height: 400px;
+            background-color: #2563eb;
+            top: -100px;
+            right: -100px;
+        }
+        .circle-2 {
+            width: 200px;
+            height: 200px;
+            background-color: #1d4ed8;
+            bottom: 50px;
+            left: 50px;
+        }
+        .title-underline {
+            width: 120px;
+            height: 6px;
+            background-color: #2563eb;
+            margin-bottom: 2rem;
+        }
+        .meta-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+        .meta-icon {
+            width: 24px;
+            text-align: center;
+            margin-right: 12px;
+            color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Decorative Elements -->
+<div class="accent-bar"></div>
+<div class="decorative-circle circle-1"></div>
+<div class="decorative-circle circle-2"></div>
+<!-- Main Content -->
+<div class="content-wrapper">
+<div class="mb-4">
+<p class="text-blue-600 font-bold tracking-widest uppercase text-sm mb-2">Internal Training Material</p>
+<h2 class="text-3xl text-gray-600 font-light mb-2">社員教育用資料</h2>
+</div>
+<h1 class="text-6xl font-black text-gray-900 leading-tight mb-6">
+                ATS転記システム<br/>
+                運用マニュアル
+            </h1>
+<div class="title-underline"></div>
+<p class="text-xl text-gray-600 mb-12 max-w-3xl leading-relaxed">
+                安定稼働とリスク最小化のための共通ルール共有。<br/>
+                運用・CS・開発間の連携強化を目指して。
+            </p>
+<!-- Meta Info Grid -->
+<div class="grid grid-cols-2 gap-8 mt-auto border-t border-gray-200 pt-8">
+<div>
+<p class="text-sm text-gray-500 uppercase tracking-wider mb-2">対象部署</p>
+<div class="meta-info-item">
+<span class="meta-icon"><i class="fas fa-users"></i></span>
+<p class="font-medium">CS事業部 ・ 運用部 ・ 開発部</p>
+</div>
+</div>
+<div>
+<p class="text-sm text-gray-500 uppercase tracking-wider mb-2">ドキュメント情報</p>
+<div class="meta-info-item">
+<span class="meta-icon"><i class="fas fa-code-branch"></i></span>
+<p>Version 1.0</p>
+</div>
+<div class="meta-info-item">
+<span class="meta-icon"><i class="far fa-calendar-alt"></i></span>
+<p>2025年12月04日 作成</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full flex justify-end pr-24 pb-8">
+<a href="slide2.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition">次へ →</a>
+</div>
+<!-- Footer with Logo Placeholder or Company Name -->
+<div class="px-8 py-4 flex justify-between items-center text-gray-400 text-sm">
+<p>Confidential</p>
+<p>ATS Transcription System Manual</p>
+</div>
+</div>
+</body>
+</html>
